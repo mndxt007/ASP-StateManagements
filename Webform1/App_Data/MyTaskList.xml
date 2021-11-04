@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MyTaskList>
+	<taskitem Name ="Lawn Mow" />
+	<taskitem Name ="Swimming" />
+	<taskitem Name ="Soccer" />
+	<taskitem Name ="Laundry" />
+	<taskitem Name ="Grocery" />
+	<taskitem Name ="Packing" />
+	<taskitem Name ="Volunteering" />
+	<taskitem Name ="Biking" />
+</MyTaskList>
