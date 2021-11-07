@@ -1,7 +1,7 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="Webform1.WebForm1" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-
+    <asp:Label ID="Label6" runat="server" Text="Label"></asp:Label>
 
     <div class="jumbotron">
         <p>
@@ -31,6 +31,7 @@
             <asp:Label ID="Label5" runat="server" ></asp:Label>
         </p>  
         <asp:XmlDataSource ID="XmlDataSource1" runat="server" DataFile="~/App_Data/MyTaskList.xml"></asp:XmlDataSource>
+        
     </div>
 
 

@@ -11,6 +11,30 @@ namespace Webform1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            String Authd;
+            Authd = "ApplicationCode executed using: ";
+            Authd += System.Security.Principal.WindowsIdentity.GetCurrent().Name + "<br/>";
+            Authd += "Is user Authenticated:";
+            Authd += User.Identity.IsAuthenticated.ToString() + "<br/>";
+            Authd += "Authentication Type,If Authenticted : ";
+            Authd += User.Identity.AuthenticationType + "<br/>";
+            Authd += "User Name, If Authenticated:";
+            Authd += User.Identity.Name + "<br/>";
+            Label6.Text = Authd;
+            /*
+            Response.Write("ApplicationCode executed using:");
+            Response.Write(System.Security.Principal.WindowsIdentity.GetCurrent().Name + "<br/>");
+
+            Response.Write("Is user Authenticated:");
+            Response.Write(User.Identity.IsAuthenticated.ToString() + "<br/>");
+
+            Response.Write("Authentication Type,If Authenticted : ");
+            Response.Write(User.Identity.AuthenticationType + "<br/>");
+
+            Response.Write("User Name, If Authenticated:");
+            Response.Write(User.Identity.Name + "<br/>");
+            */
+
             if (!IsPostBack)
             {
                 if (ViewState["Clicks"] == null)
